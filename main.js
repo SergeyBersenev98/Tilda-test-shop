@@ -89,6 +89,7 @@ checkFavorites = () => {
 
 deleteSomeInfo = () => {
   localStorage.setItem("someInfo", "no"); // Set state
+  document.getElementById("someInfo").style.display = "none"
 }
 
 checkSomeInfo = () => {
