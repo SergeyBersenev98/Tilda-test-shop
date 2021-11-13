@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+
+  padding-left: 6vw;
+}
+
+.header {
+  height: 10vh;
+  background-color: #7b6994;
+  display: flex;
+}
+
+.header i {
+  color: white;
+  transition: 0.3s;
+}
+
+h1 {
+  padding: 10px;
+  text-align: center;
+  font-family: "Sassy Frass Strong", cursive;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h3 {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px gray solid;
+  margin: 20px;
+  margin-top: 0px;
+  width: 80%;
+}
+
+.card {
+  width: 95vw;
+  height: 80vh;
+  box-shadow: 10px 8px 23px -2px rgba(34, 60, 80, 0.22);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vh;
+  border-radius: 5px;
+  position: relative;
+  padding-top: 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.galery {
+  justify-content: center;
+  width: 60%;
+}
+.galery img {
+  width: 55vh;
+}
+
+.flex-main {
+  display: flex;
+}
+
+#miniature {
+  margin: 20px;
+}
+
+#miniature img {
+  margin: 3px;
+  width: 100px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+}
+
+#miniature img:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.rightColumn {
+  position: relative;
+}
+
+#favourites {
+  position: absolute;
+  margin-left: 80%;
+}
+
+.prices {
+  background-color: #f7f0fc;
+  padding: 6px;
+  border-radius: 6px;
+  justify-content: center;
+  display: flex;
+  font-size: 34px;
+  text-align: center;
+  margin-top: 30px;
+  position: absolute;
+  bottom: 30px;
+  left: 40%;
+}
+
+del {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+del:before {
+  content: "";
+  border-bottom: 3px solid red;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  transform: rotate(12deg);
+}
+
+.newPrice {
+  position: absolute;
+  margin-top: -40px;
+  margin-right: -60px;
+  color: red;
+  font-family: "Sassy Frass", cursive;
+  font-size: 52px;
+  font-weight: 800;
+}
+
+.description {
+  padding: 20px;
+  color: #4a4452;
+}
+
+.some-info {
+  text-align: center;
+  color: #7a1765;
+  background-color: #cfabc7;
+  padding: 10px;
+  margin: 10px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.some-info i {
+  font-size: 16px;
+}
+
+#img button {
+  width: 25px;
+}
+
+.galery button {
+  opacity: 0.2;
+  font-size: 30px;
+  border: 0px white solid;
+  background-color: #f1f1f1;
+}
+
+.galery button:hover {
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.options {
+  width: 90%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  height: 68px;
+  margin-left: 5%;
+  padding-top: 10px;
+}
+
+[data-tooltip] {
+  position: relative;
+}
+[data-tooltip]::after {
+  font-size: 20px;
+  content: attr(data-tooltip); /* Print text */
+  position: absolute;
+  width: auto;
+  left: -50px;
+  top: 0;
+  background: #eee9f1;
+  color: #fff;
+  padding: 0.5em;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.5s;
+  color: #4a4452;
+  z-index: 2;
+}
+[data-tooltip]:hover::after {
+  opacity: 0.8;
+  top: -2em;
+  left: -30px;
+}
+
+i {
+  margin: 10px;
+  font-size: 40px;
+  color: #7b718a;
+}
+
+i:hover {
+  color: #493a5e;
+}
+
+#quantityOnMarket,
+#quantityInBacket {
+  text-align: center;
+  font-size: 14px;
+  min-width: 18;
+  height: 18px;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  position: absolute;
+}
+
+#quantityInBacket {
+  right: 25px;
+}
+
+.options button {
+  background-color: #dbccf0;
+  border: 0px;
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+  color: #4a4452;
+  transition: all 0.5s;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.options button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s;
+}
+.options button:hover::before {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+}
+.options button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: scale(1.2, 1.2);
+}
+.options button:hover::after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+.add-delete-product {
+  margin-top: 20px;
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+  background-color: #dbccf0;
+  border-radius: 15px;
+  color: white;
+  padding-left: 7px;
+  transition: 0.2s;
+}
+
+.add-delete-product:hover {
+  background-color: #493a5e;
+}
+
+@media (max-width: 840px) {
+  .some-info {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .flex-main {
+    display: block;
+  }
+
+  .galery {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card {
+    height: auto;
+  }
+
+  .prices {
+    position: relative;
+    margin-left: -21%;
+    width: 50%;
+  }
+  .options {
+    position: relative;
+  }
+}
+
+@media (max-width: 520px) {
+  .options button {
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    line-height: 1em;
+  }
+  .galery img {
+    width: 120%;
+  }
+}
