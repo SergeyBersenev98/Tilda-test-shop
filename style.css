@@ -173,7 +173,7 @@ del:before {
 
 .options {
   width: 90%;
-  position: absolute;
+  position: relative;
   bottom: 0;
   display: flex;
   height: 68px;
