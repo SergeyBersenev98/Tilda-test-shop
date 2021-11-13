@@ -12,7 +12,7 @@
 }
 
 .header {
-  height: 10vh;
+  height: 70px;
   background-color: #7b6994;
   display: flex;
 }
@@ -42,7 +42,7 @@ h3 {
 
 .card {
   width: 95vw;
-  height: 80vh;
+  height: auto;
   box-shadow: 10px 8px 23px -2px rgba(34, 60, 80, 0.22);
   margin-left: auto;
   margin-right: auto;
@@ -50,6 +50,7 @@ h3 {
   border-radius: 5px;
   position: relative;
   padding-top: 20px;
+  min-height: 400px;
 }
 
 .flex {
